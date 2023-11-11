@@ -1,0 +1,3 @@
+[submodule "I3ean/vendor/spdlog"]
+	path = I3ean/vendor/spdlog
+	url = https://github.com/gabime/spdlog

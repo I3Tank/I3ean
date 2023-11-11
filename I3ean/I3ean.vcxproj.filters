@@ -21,6 +21,9 @@
     <ClCompile Include="src\I3ean\Application.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="src\I3ean\Log.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\I3ean\Application.h">
@@ -30,6 +33,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="src\I3ean\EntryPoint.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\I3ean\Log.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
