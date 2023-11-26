@@ -4,6 +4,9 @@
     <Filter Include="I3ean">
       <UniqueIdentifier>{D5AE450D-41C3-6DBE-0A45-111E76186AEF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="I3ean\Events">
+      <UniqueIdentifier>{19B991EA-051C-218F-AEA1-59459AE3EC11}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\I3ean.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\I3ean\EntryPoint.h">
       <Filter>I3ean</Filter>
+    </ClInclude>
+    <ClInclude Include="src\I3ean\Events\ApplicationEvent.h">
+      <Filter>I3ean\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\I3ean\Events\Event.h">
+      <Filter>I3ean\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\I3ean\Events\KeyEvent.h">
+      <Filter>I3ean\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\I3ean\Events\MouseEvent.h">
+      <Filter>I3ean\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\I3ean\Log.h">
       <Filter>I3ean</Filter>

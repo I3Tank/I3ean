@@ -9,3 +9,5 @@
 #else
 	#error I3ean only supports Windows!
 #endif
+
+#define BIT(x) (1 << x)
