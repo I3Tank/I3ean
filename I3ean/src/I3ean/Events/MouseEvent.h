@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace I3ean {
 
 	class I3EAN_API MouseMovedEvent : public Event

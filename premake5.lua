@@ -18,6 +18,9 @@ project "I3ean"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "i3pch.h"
+	pchsource "I3ean/src/i3pch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

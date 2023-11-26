@@ -1,9 +1,7 @@
 #pragma once
 
+#include "i3pch.h"
 #include "I3ean/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace I3ean {
 

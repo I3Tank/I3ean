@@ -1,3 +1,4 @@
+#include "i3pch.h"
 #include "Application.h"
 
 #include "I3ean/Events/ApplicationEvent.h"
