@@ -2,6 +2,8 @@
 
 #include "Core.h"
 #include "Events/Event.h"
+#include "I3ean/Events/ApplicationEvent.h"
+
 #include "Window.h"
 
 namespace I3ean {
@@ -13,7 +15,11 @@ namespace I3ean {
 		virtual ~Application();
 
 		void Run();
+
+		void OnEvent(Event& e);
 	private:
+		bool OnWindowClose(WindowCloseEvent& e);
+
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
 	};
