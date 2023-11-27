@@ -7,6 +7,12 @@
     <Filter Include="I3ean\Events">
       <UniqueIdentifier>{19B991EA-051C-218F-AEA1-59459AE3EC11}</UniqueIdentifier>
     </Filter>
+    <Filter Include="I3ean\Platform">
+      <UniqueIdentifier>{C96A02F2-B538-F6F7-9ECC-661E8A39D25C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="I3ean\Platform\Windows">
+      <UniqueIdentifier>{03CE8E56-EFC7-B7A8-D834-4EB9C4CD1D15}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\I3ean.h" />
@@ -34,6 +40,12 @@
     <ClInclude Include="src\I3ean\Log.h">
       <Filter>I3ean</Filter>
     </ClInclude>
+    <ClInclude Include="src\I3ean\Platform\Windows\WindowsWindow.h">
+      <Filter>I3ean\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\I3ean\Window.h">
+      <Filter>I3ean</Filter>
+    </ClInclude>
     <ClInclude Include="src\i3pch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +54,9 @@
     </ClCompile>
     <ClCompile Include="src\I3ean\Log.cpp">
       <Filter>I3ean</Filter>
+    </ClCompile>
+    <ClCompile Include="src\I3ean\Platform\Windows\WindowsWindow.cpp">
+      <Filter>I3ean\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\i3pch.cpp" />
   </ItemGroup>

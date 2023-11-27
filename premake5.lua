@@ -10,6 +10,12 @@ workspace "I3ean"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "I3ean/vendor/GLFW/include"
+
+include "I3ean/vendor/GLFW"
+
 project "I3ean"
 	location "I3ean"
 	kind "SharedLib"
@@ -30,7 +36,14 @@ project "I3ean"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

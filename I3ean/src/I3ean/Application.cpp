@@ -2,12 +2,12 @@
 #include "Application.h"
 
 #include "I3ean/Events/ApplicationEvent.h"
-#include "I3ean/Log.h"
+#include <GLFW/glfw3.h>
 
 namespace I3ean {
 
 	Application::Application() {
-
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application() {
@@ -15,10 +15,11 @@ namespace I3ean {
 	}
 
 	void Application::Run() {
-		WindowResizeEvent e(1280, 720);
-		I3_TRACE(e);
-
-		while (true);
+		while (m_Running) {
+			glClearColor(1, 0, 1, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_Window->OnUpdate();
+		}
 	}
 
 }

@@ -12,6 +12,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "I3ean/Log.h"
+
 #ifdef I3_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif
